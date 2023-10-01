@@ -45,7 +45,7 @@ const cardData = [
 const Projects = () => {
   return (
     <div className="py-20 bg-gray-900">
-      <div className="text-center text-[46px] font-extrabold mb-20 text-[#004AAD]">
+      <div className="text-center text-[46px] font-extrabold mb-20 text-white">
         Projects
       </div>
       <div className="flex flex-wrap justify-evenly">

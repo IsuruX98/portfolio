@@ -15,13 +15,15 @@ import {
   SiIntellijidea,
   SiFigma,
   SiCanva,
+  SiPostman,
+  SiWebstorm,
 } from "react-icons/si";
-import { BsCodeSlash } from "react-icons/bs";
+import { TbBrandVscode } from "react-icons/tb";
 
 const Skills = () => {
   return (
     <div>
-      <div className="py-20 bg-gray-950">
+      <div className="py-20 px-6 bg-gray-950">
         <div className="text-white">
           <div className="text-center mb-5">
             <p className="text-center text-[46px] text-[#004AAD] font-extrabold mb-20">
@@ -49,9 +51,11 @@ const Skills = () => {
               Environments
             </p>
             <div className="flex flex-wrap justify-center mt-3 lg:gap-12 gap-3">
-              <BsCodeSlash className="text-5xl" />
-              <SiAndroidstudio className="text-5xl" />
+              <TbBrandVscode className="text-5xl" />
               <SiIntellijidea className="text-5xl" />
+              <SiWebstorm className="text-5xl" />
+              <SiAndroidstudio className="text-5xl" />
+              <SiPostman className="text-5xl" />
               <SiFigma className="text-5xl" />
               <SiCanva className="text-5xl" />
             </div>

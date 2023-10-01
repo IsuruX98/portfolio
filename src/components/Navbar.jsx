@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between w-full py-4 bg-gray-900 md:px-20 px-12 sticky top-0 z-[999]">
+    <nav className="flex justify-between w-full py-4 bg-gray-900 md:px-36 px-12 sticky top-0 z-[999]">
       <div className="flex items-center">
         <h3 className="text-2xl font-extrabold text-white">
           <ScrollLink to="home" spy={true} smooth={true} duration={500}>
@@ -22,7 +22,7 @@ const Navbar = () => {
           </ScrollLink>
         </h3>
       </div>
-      <div className="items-center hidden space-x-5 md:flex text-white">
+      <div className="items-center hidden space-x-12 md:flex text-white">
         <ScrollLink to="education" spy={true} smooth={true} duration={500}>
           Education
         </ScrollLink>

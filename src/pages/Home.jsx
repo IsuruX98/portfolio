@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <div
         id="home"
-        className="grid lg:grid-cols-2 px-12 pt-10 lg:pt-0 lg:px-20 gap-10 bg-gray-950"
+        className="grid lg:grid-cols-2 py-10 px-12 lg:px-36 gap-10 bg-gray-950"
       >
         <div className="flex  items-center h-full">
           <div>
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="lg:py-20 lg:pl-36 p-5">
+        <div className="lg:py-20 lg:pl-36 p-5 mb-10 lg:mb-0">
           <img
             className="rounded-3xl  h-full w-full object-cover"
             src={img}
