@@ -22,7 +22,7 @@ import { TbBrandVscode } from "react-icons/tb";
 
 const Skills = () => {
   return (
-      <div className="lg:pb-16 py-6 overflow-hidden relative bg-gray-100">
+      <div className="lg:pb-16 py-6 overflow-hidden relative bg-white">
         <div className="flex flex-col justify-center gap-5">
           <div className="xl:px-32 px-10">
             <h1 className="text-[16px] mb-4 uppercase">Skills</h1>
