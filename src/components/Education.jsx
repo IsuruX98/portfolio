@@ -36,11 +36,11 @@ const timelineData = [
   },
 ];
 
-const Eduction = () => {
+const Education = () => {
   return (
     <div>
-      <div className="py-20 bg-gray-900 px-8">
-        <div className="text-center text-[46px] font-extrabold mb-20 text-white">
+      <div className="md:pt-20 p-8 bg-gray-100 lg:px-0 px-8">
+        <div className="text-center text-black text-2xl lg:text-4xl md:mb-20">
           Education
         </div>
         <VerticalTimeline className="mt-10">
@@ -48,11 +48,11 @@ const Eduction = () => {
             <VerticalTimelineElement
               key={index}
               date={item.date}
-              dateClassName="text-white"
-              iconStyle={{ background: "#004AAD", color: "#fff" }}
+              dateClassName="text-black"
+              iconStyle={{ background: "#1a1a1a", color: "#fff" }}
               icon={<i className="fas fa-graduation-cap"></i>}
             >
-              <h3 className="vertical-timeline-element-title text-[#004AAD] font-bold text-xl">
+              <h3 className="vertical-timeline-element-title text-[#1a1a1a] font-bold text-xl">
                 {item.title}
               </h3>
               <p>{item.description}</p>
@@ -64,4 +64,4 @@ const Eduction = () => {
   );
 };
 
-export default Eduction;
+export default Education;

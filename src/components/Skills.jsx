@@ -22,14 +22,12 @@ import { TbBrandVscode } from "react-icons/tb";
 
 const Skills = () => {
   return (
-    <div>
-      <div className="py-20 px-6 bg-gray-950">
-        <div className="text-white">
-          <div className="text-center mb-5">
-            <p className="text-center text-[46px] text-[#004AAD] font-extrabold mb-20">
-              Languages
-            </p>
-            <div className="flex flex-wrap justify-center lg:gap-12 gap-3 mt-3">
+      <div className="lg:pb-16 py-6 overflow-hidden relative bg-gray-100">
+        <div className="flex flex-col justify-center gap-5">
+          <div className="xl:px-32 px-10">
+            <h1 className="text-[16px] mb-4 uppercase">Skills</h1>
+            <h1 className="text-2xl lg:text-4xl mb-4">Languages</h1>
+            <div className="flex flex-wrap lg:justify-start justify-center lg:gap-12 gap-3 mt-3 py-8">
               <FaReact className="text-5xl" />
               <FaJava className="text-5xl" />
               <SiJavascript className="text-5xl" />
@@ -37,8 +35,6 @@ const Skills = () => {
               <FaNodeJs className="text-5xl" />
               <SiMongodb className="text-5xl" />
               <SiSpringboot className="text-5xl" />
-            </div>
-            <div className="flex flex-wrap justify-center mt-6 lg:gap-12 gap-3">
               <SiPhp className="text-5xl" />
               <SiPython className="text-5xl" />
               <SiMysql className="text-5xl" />
@@ -47,10 +43,10 @@ const Skills = () => {
               <SiHtml5 className="text-5xl" />
               <FaCss3Alt className="text-5xl" />
             </div>
-            <p className="text-center text-[#004AAD] text-[46px] pt-20 font-extrabold mb-20 ">
-              Environments
-            </p>
-            <div className="flex flex-wrap justify-center mt-3 lg:gap-12 gap-3">
+          </div>
+          <div className="xl:px-32 px-10">
+            <h1 className="text-2xl lg:text-4xl mb-4">Environments</h1>
+            <div className="flex flex-wrap lg:justify-start justify-center mt-3 lg:gap-12 gap-3 py-8">
               <TbBrandVscode className="text-5xl" />
               <SiIntellijidea className="text-5xl" />
               <SiWebstorm className="text-5xl" />
@@ -62,7 +58,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

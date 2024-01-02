@@ -1,6 +1,6 @@
 import React from "react";
-import img from "../assets/image.png";
-import Eduction from "../components/Eduction";
+import img from "../assets/image.PNG";
+import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import cv from "../assets/isurumadusankaresume.pdf";
@@ -10,57 +10,60 @@ const Home = () => {
   const handleDownload = () => {
     saveAs(cv, "isurumadusanka.pdf");
   };
+
   return (
-    <>
-      <div
-        id="home"
-        className="grid lg:grid-cols-2 py-10 px-12 lg:px-36 gap-10 bg-gray-950"
-      >
-        <div className="flex  items-center h-full">
-          <div>
-            <h2 className="text-[56px] text-white font-extrabold">Isuru</h2>
-            <span className="text-[46px] font-extrabold text-[#004AAD]">
-              Madusanka
-            </span>
-            <h2 className="pt-8 text-white">
-              As a BSc (Hons) Software Engineering student at the Sri Lanka
-              Institute of Information Technology, I possess coding skills in
-              Java, Kotlin, and Javascript, along with familiarity in
-              Springboot, MERN stack, and CSS frameworks like Bootstrap5 and
-              Tailwind. I am eager to secure an internship as a software
-              engineer to contribute to meaningful projects and learn from a
-              dynamic team, utilizing my knowledge and passion for software
-              development.
-            </h2>
-            <div className="pt-10">
+      <div className="flex flex-col"> {/* Apply h-screen class here */}
+        <div id="home" className="sm:grid xl:px-32 px-10  lg:grid-cols-2 gap-6 items-center mt-[-84px] lg:pt-0 pt-16">
+          {/* Content for small screens */}
+          <div className="flex flex-col justify-center gap-12">
+            <div>
+              <h1 className="text-5xl font-bold pt-12">
+                Isuru <br />
+                <span className="font-bold">Madusanka</span>
+                <br />
+              </h1>
+            </div>
+            <div>
+              <p className="text-black">
+                As a BSc (Hons) Software Engineering student at the Sri Lanka Institute
+                of Information Technology, I possess coding skills in Java, Kotlin, and
+                Javascript, along with familiarity in Springboot, MERN stack, and CSS
+                frameworks like Bootstrap5 and Tailwind. I am eager to secure an internship
+                as a software engineer to contribute to meaningful projects and learn from
+                a dynamic team, utilizing my knowledge and passion for software development.
+              </p>
+            </div>
+            <div>
               <button
-                onClick={handleDownload}
-                className="bg-[#004AAD] text-white font-bold px-6 py-3 rounded-md mr-4 hover:bg-blue-800"
+                  className="lg:mt-4 py-2 px-6 rounded-full flex items-center justify-center gap-2 bg-transparent border-2 border-black text-black hover:bg-[#1A1A1A] hover:text-white transition duration-300"
+                  onClick={handleDownload}
               >
-                Download Resume
+                Download CV
               </button>
             </div>
+
+
+
+          </div>
+          {/* Image for large screens */}
+          <div className="flex justify-center">
+            <img
+                src={img}
+                alt="Your Alt Text"
+                className="lg:h-screen h-auto pt-8"
+            />
           </div>
         </div>
-
-        <div className="lg:py-20 lg:pl-36 p-5 mb-10 lg:mb-0">
-          <img
-            className="rounded-3xl  h-full w-full object-cover"
-            src={img}
-            alt=""
-          />
+        <div id="Education">
+          <Education />
+        </div>
+        <div id="Skills">
+          <Skills />
+        </div>
+        <div id="Projects">
+          <Projects />
         </div>
       </div>
-      <div id="education">
-        <Eduction />
-      </div>
-      <div id="skills">
-        <Skills />
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-    </>
   );
 };
 

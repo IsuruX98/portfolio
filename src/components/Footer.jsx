@@ -8,12 +8,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-950 text-white py-6">
+    <footer className="bg-black text-white py-6">
       <div>
         <div className="flex md:flex-row flex-col md:justify-between items-center w-full py-4 px-20">
           <div className="mb-4 md:mb-0">
-            <h3 className="text-gray-300 text-sm">
-              <p>&copy; 2023 Isuru Madusanka. All rights reserved.</p>
+            <h3 className="text-gray-300 text-sm ">
+              <p className="text-center">&copy; 2024 Isuru Madusanka. All rights reserved.</p>
             </h3>
           </div>
           <div className="flex space-x-4">
