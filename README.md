@@ -4,4 +4,5 @@ I'm excited to share my newly developed portfolio website, designed using React 
 
 you can check it from this link - https://isurumadusanka.vercel.app/
 
-![Web capture_2-10-2023_135941_isurumadusanka vercel app](https://github.com/IsuruX98/portfolio/assets/104721314/130a0e22-d0c6-419c-9519-c49b968dc45a)
+![Web capture_2-1-2024_174018_isurumadusanka vercel app](https://github.com/IsuruX98/portfolio/assets/104721314/7316de7d-0ce6-4579-835a-b10049e73fd1)
+
