@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index }) => {
                 style={{ width: '100%', height: '200px', objectFit: 'cover' }} // Set a fixed height for the image
                 className="rounded-t-lg"
             />
-            <div className="p-4 bg-white rounded-b-lg flex flex-col justify-between" style={{ height: '100%' }}>
+            <div className="px-4 pt-4 py-6 bg-white rounded-b-lg flex flex-col justify-between" style={{ height: '100%' }}>
                 {/* Set height to 100% for inner content */}
                 <div>
                     <h2 className="text-xl font-bold mb-6">{project.title}</h2>
